@@ -72,7 +72,9 @@ function setSquare(thisSquare) {
   var randomString = getRandomStringAndRemove();
   document.getElementById(currentSquare).innerHTML = randomString;
   document.getElementById(currentSquare).onclick = () => {
-    document.getElementById(currentSquare).innerHTML = `<img src="https://media.licdn.com/dms/image/C5603AQFlycWM-VLLzQ/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=wwDv0DteLekUoRAw_Q1a0z6Ia8VgMz9lo4Ita_9pYpY"/>`
+    var crossedOutImageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmuR_4xnj9h7-iRf7M69LXdy64egnbhe9MQmiTqKbvryhNpf-q';
+    // var crossedOutImageUrl = "https://media.licdn.com/dms/image/C5603AQFlycWM-VLLzQ/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=wwDv0DteLekUoRAw_Q1a0z6Ia8VgMz9lo4Ita_9pYpY";
+    document.getElementById(currentSquare).innerHTML = `<img src="${crossedOutImageUrl}"/>`
   };
 }
 
