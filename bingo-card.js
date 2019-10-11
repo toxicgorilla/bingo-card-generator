@@ -80,6 +80,9 @@ function setSquare(thisSquare) {
 
   usedNums[newNum] = true;
   document.getElementById(currentSquare).innerHTML = newNum;
+  document.getElementById(currentSquare).onclick = () => {
+    document.getElementById(currentSquare).innerHTML = `<img src="https://media.licdn.com/dms/image/C5603AQFlycWM-VLLzQ/profile-displayphoto-shrink_800_800/0?e=1576108800&v=beta&t=wwDv0DteLekUoRAw_Q1a0z6Ia8VgMz9lo4Ita_9pYpY"/>`
+  };
 }
 
 function getNewNum() {
