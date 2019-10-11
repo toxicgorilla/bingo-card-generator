@@ -19,16 +19,18 @@ h1 {
 }
 
 table {
+  width: 50%;
   border-collapse: collapse;
+  margin: 40px auto;
 }
 
 th,
 td {
   border: 2px #666 solid;
   text-align: center;
-  font-size: 24px;
-  height: 50px;
-  width: 50px;
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
 }
 
 td img   {
@@ -38,4 +40,11 @@ td img   {
 
 #free {
   background-color: #fff;
+}
+
+#reload {
+  text-align: center;
+  width: 100%;
+  display: block;
+  text-decoration: none;
 }
